@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="$breadcrumb-divider: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);">
+</head>
+<body style="background-color: #d5f0f3;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="img/logo.jpg" width="5%" class="rounded-circle">
+        <a class="navbar-brand ml-2" href="index.html">Klinik Ananda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="booking.html">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimoni.html">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Booking</li>
+        </ol>
+      </nav>
+      <form action="">
+        <h4 class="ml-5 mt-3">Booking Kesehatan Periksa Gigi</h4>
+                <table style="margin-left: 53px; padding-left: 5%;">
+                    <tr>
+                        <td width="400 rowspan=6"><label for="Nama">Nama Pasien</label></td>
+                        <td>: <input type="text" id="title"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dokter">Pilih Dokter</label></td>
+                        <td>: <select name="dokter" style="width: 100px; margin-left: 5px;"><option value="" align="center">---PILIH---</option>
+                            <option value="">Drg Bintang</option>
+                            <option value="">Drg Indra Budi</option>
+                            <option value="">Drg Amelia</option>
+                            <option value="">Drg Putri Anisa</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Layanan">Pilih Layanan</label></td>
+                        <td>: <select name="Layanan" style="width: 100px; margin-left: 5px;"><option value="" cols="60" rows="2" align="center">---PILIH---</option>
+                            <option value="">Pencabutan Gigi</option>
+                            <option value="">Perawatan Gigi</option>
+                            <option value="">Operasi orthondok</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Keluhan">Keluhan</label></td>
+                        <td>: <textarea name="" id="Keluhan" cols="50" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pembayaran">Pembayaran</label></td>
+                        <td>:   <input type="radio" id="cash">
+                                <label for="cash">Cash</label>
+    
+                                <input type="radio" id="transfer">
+                                <label for="transfer">Transfer</label>
+                           
+                                <input type="radio" id="ewallet">
+                                <label for="ewallet">eWallet</label>
+                        </td>
+                    <tr>
+						<td><label>Tanggal Periksa</label></td>
+					    <td>: <input type="date" name="tgl_periksa"></td>	
+					</tr>
+                    <tr>
+                        <td><label for="umur">Umur</label></td>
+                        <td>: <input type="number" id="umur"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hp">Telepon/HP</label></td>
+                        <td>: <input type="no" id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td>: <input type="email" id="email"></td>
+                    </tr>
+                    <br>
+                </table>
+                <br>
+                <br>
+                <div class="tombol_submit_reset ml-5">
+               
+                        <input type="submit"> <input type="reset">
+    
+                </div>  
+    </form>
+<br>
+<br>
+<br>
+<br>
+        <div id="footer">
+           <strong class="ml-3">Develop By Mahasiswa STT-NF @2022</strong>
+        </div>
+    </footer>
+</body>
+</html>

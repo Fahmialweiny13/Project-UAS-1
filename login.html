@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<h1>Login Klinik Gigi Ananda</h1>
+ 
+	<div class="kotak_login">
+		<p class="tulisan_login">Silahkan login</p>
+ 
+		<form>
+			<label for="username">Username</label>
+            <input type="text" class="form_login" id="username" placeholder="Username atau email .." required>
+            <label for="password">Password</label>
+            <input type="password" class="form_login" id="password" placeholder="Password .." required>
+			
+			<div class="tombol_login">
+				<center>
+					<button type="button" onclick="login()">Login</button>
+				</center>
+			</div>
+			
+			<br/>
+			<br/>
+			<center>
+				<a class="link" href="registrasi.html">Registrasi User</a>
+			</center>
+		</form>
+		
+	</div>
+	<script>
+        function login(){
+            let uname = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+
+            if(uname == "Ananda" && pass == "gigisehat"){
+                alert("Anda berhasil login");
+                location.href = "daftarbooking.html";
+            }else {
+                alert("Username atau password salah");
+            }
+        }
+    </script>
+    <br>
+    
+    <footer class="main-footer">
+        <strong>Develop By Mahasiswa STT-NF @2022</strong>
+    </footer>
+</body>
+</html>
